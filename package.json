@@ -1,0 +1,50 @@
+{
+  "name": "@elexfreeman/likechoko-common",
+  "version": "1.0.0",
+  "description": "Likecholko common data",
+  "main": "lib/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "engines": {
+    "node": ">=12"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elexfreeman/likechoko-common.git"
+  },
+  "keywords": [
+    "core"
+  ],
+  "author": "John Shepard",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/elexfreeman/likechoko-common.git"
+  },
+  "homepage": "https://github.com/elexfreeman/likechoko-common.git#README.md",
+  "peerDependencies": {},
+  "devDependencies": {
+    "typescript": "^3.8.3",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "lint-staged": "^12.3.5",
+    "jest": "^27.5.1",
+    "prettier": "^2.6.2"
+  },
+  "scripts": {
+    "release": "./sh/release.sh",
+    "build": "tsc",
+    "lint": "eslint . --ext .js,.vue,.ts --ignore-path .eslintignore",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "dependencies": {},
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  }
+}
